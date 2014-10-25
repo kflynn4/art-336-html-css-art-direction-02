@@ -1,0 +1,71 @@
+/* 
+Layout Rules
+    CSS, by its very nature, is used to lay elements out on the page. However, there is a distinction between layouts dictating the major and minor components of a page. The minor components—such as a callout, or login form, or a navigation item—sit within the scope of major components such as a header or footer. I refer to the minor components as Modules and will dive into those in the next section. The major components are referred to as Layout styles.
+    Layout styles can also be divided into major and minor styles based on reuse. Major layout styles such as header and footer are traditionally styled using ID selectors but take the time to think about the elements that are common across all components of the page and use class selectors where appropriate.
+*/
+
+nav[role="navigation"] {
+    text-align: right;
+}
+
+nav[role="navigation"] ul, .contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav[role="navigation"] ul {
+    margin: 12px;
+}
+
+nav[role="navigation"] ul li, .contact ul lu {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header[role="banner"] {
+    margin: 30px 0 100px 0;
+//    @media (min-width: 700px) {
+//        float: left;
+//        width: 35%;
+//    }
+}
+//    
+//    main[role="main"] {
+//        @media (min-width: 700px) {
+//            float: right;
+//            width: 60%;
+//        }
+//    }
+//
+//footer[role-"contentinfo"] {
+//    @media (min-width: 700px) {
+//        float: left;
+//        width: 100%;
+//    }
+//}
+
+.banner-photo {
+    text-align:center;
+}
+
+.img {
+    text-align: center;
+}
+
+div.box {
+	background-color: rgba(255, 254, 254, 0.83);
+	float:left;
+	padding: 4px;
+	max-width: 500px;
+	height: auto;
+}
+//.container {
+//        width:100%;
+//        height:200px;
+//}
+
+.header {
+    font-size: 40px;
+}
